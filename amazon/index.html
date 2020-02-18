@@ -94,9 +94,20 @@
 
 <h2>Directory</h2>
 
-  <p><b><a href="#files">Files</a></b> </p>
-  <p><b><a href="#citation">Citation</a></b> </p>
-  <p><b><a href="#code">Code</a></b> </p>
+  <p>	
+  	<li>
+  		<b><a href="#files">Files</a></b> 
+  		<ul>
+  			<b><a href="#samples">samples</a></b>
+  		</ul>
+  	</li>
+	<li>
+		<b><a href="#citation">Citation</a></b> 
+	</li>
+	<li>
+  		<b><a href="#code">Code</a></b> 
+  	</li>
+  </p>
 
 
 <a name="files"></a>
@@ -667,9 +678,29 @@
 
 <p>Format is one-review-per-line in json. See examples below for further help reading the data.</p>
 
+<a name="samples"></a>
 <h3>Sample review:</h3>
 
 <p>
+<div class="code">{
+"image": ["https://images-na.ssl-images-amazon.com/images/I/71eG75FTJJL._SY88.jpg"], 
+"overall": 5.0, 
+"vote": "2", 
+"verified": True, 
+"reviewTime": "01 1, 2018", 
+"reviewerID": "AUI6WTTT0QZYS", 
+"asin": "5120053084", 
+"style": {
+	"Size:": "Large", 
+	"Color:": "Charcoal"
+	}, 
+"reviewerName": "Abbey", 
+"reviewText": "I now have 4 of the 5 available colors of this shirt... ", 
+"summary": "Comfy, flattering, discreet--highly recommended!", 
+"unixReviewTime": 1514764800
+}
+</div>
+
 <div class="code">{
   "reviewerID": "A2SUAM1J3GNN3B",
   "asin": "0000013714",
@@ -677,7 +708,7 @@
   "vote": 5,
   "style": {
     "Format:": "Hardcover"
-  }
+  },
   "reviewText": "I bought this for my husband who plays the piano.  He is having a wonderful time playing these old hymns.  The music  is at times hard to read because we think the book was published for singing from more than playing from.  Great purchase though!",
   "overall": 5.0,
   "summary": "Heavenly Highway Hymns",
@@ -700,6 +731,7 @@
     <li><tt>summary</tt> - summary of the review</li>
     <li><tt>unixReviewTime</tt> - time of the review (unix time)</li>
     <li><tt>reviewTime</tt> - time of the review (raw)</li>
+    <li><tt>image</tt> - images that users post after they have received the product</li>
   </ul>
 </p>
 
