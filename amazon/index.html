@@ -85,9 +85,21 @@
     </li>  
   </ul>
 </p>
-<p>You can also download the review data from our previous datasets.</p>
+
+<p><b>You can also download the review data from our previous datasets.</b></p>
 <p><a href="http://jmcauley.ucsd.edu/data/amazon/links.html">Amazon review (2014)</a></p>
 <p><a href="http://snap.stanford.edu/data/web-Amazon-links.html">Amazon review (2013)</a></p>
+
+
+<h2>Citation</h2>
+<p>Please cite the following paper if you use the data in any way:</p>
+<p>
+  <b>Justifying recommendations using distantly-labeled reviews and fined-grained aspects</b><br>
+  Jianmo Ni, Jiacheng Li, Julian McAuley<br>
+  <em>Empirical Methods in Natural Language Processing (EMNLP)</em>, 2019<br>
+  <a href="http://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19a.pdf">pdf</a>
+</p>
+
 
 <h2>Note</h2>
 <p>We provide a <a href="https://colab.research.google.com/drive/1Zv6MARGQcrBbLHyjPVVMZVnRWsRnVMpV">colab notebook</a> that helps you parse and clean the data. For example:
@@ -96,12 +108,14 @@
 		<li>Check if title has HTML contents and filter them</li>
 	</ul>
 </p>
-<p>We appreciate any help or feedback to improve the quality of our dataset! Feel free to reach us at jin018@ucsd.edu if you meet any following questions:
+<p><b>We appreciate any help or feedback to improve the quality of our dataset! Feel free to reach us at jin018@ucsd.edu if you meet any following questions:</b>
 	<ul>
 		<li>Unparsed HTML contents</li>
 		<li>Duplicate items which have same reviews</li>
 	</ul>
 </p>
+
+
 <h2>Directory</h2>
 
   <p>	
@@ -120,9 +134,6 @@
   			<b><a href="#sample-metadata">sample metadata </a></b>
   		</ul>
   	</li>
-	<li>
-		<b><a href="#citation">Citation</a></b> 
-	</li>
 	<li>
   		<b><a href="#code">Code</a></b> 
   	</li>
@@ -1002,18 +1013,6 @@ Below are files for individual product categories, which have already had duplic
 </p> --> 
 
 
-<a name="citation"></a>
-<h2>Citation</h2>
-
-<p>Please cite the following if you use the data in any way:</p>
-
-<p>
-  <b>Justifying recommendations using distantly-labeled reviews and fined-grained aspects</b><br>
-  Jianmo Ni, Jiacheng Li, Julian McAuley<br>
-  <em>Empirical Methods in Natural Language Processing (EMNLP)</em>, 2019<br>
-  <a href="http://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19a.pdf">pdf</a>
-</p>
-
 
 <a name="code"></a>
 <h2>Code</h2>
@@ -1135,6 +1134,15 @@ print sum(ratings) / len(ratings)
 
 </div>
 
+
+
+<div hidden>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=NhRs0vCCGWHg2FizXLAthPcEcwmf_mYfPcdnhDwzyC0&cl=ffffff&w=a"></script>
+</div>
+
+
+
+
 <script type="text/javascript">
 if (typeof jQuery != 'undefined') {
   jQuery(document).ready(function($) {
@@ -1189,6 +1197,7 @@ if (typeof jQuery != 'undefined') {
   })();
 
 </script>
+
 
 </body>
 </html>
